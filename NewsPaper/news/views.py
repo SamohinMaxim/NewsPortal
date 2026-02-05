@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 from django.db.models.functions import datetime
 
 from django.shortcuts import render
@@ -32,3 +33,8 @@ def post_detail(request, pk):
 
 
 
+=======
+from django.shortcuts import render
+
+# Create your views here.
+>>>>>>> 563c196b426d9b954cb44975d8bf8b2b33b43990

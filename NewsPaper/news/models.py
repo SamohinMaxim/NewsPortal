@@ -1,5 +1,8 @@
 from operator import truth
+<<<<<<< HEAD
 
+=======
+>>>>>>> 563c196b426d9b954cb44975d8bf8b2b33b43990
 from tkinter.constants import CASCADE
 from django.contrib.auth.models import User
 from django.db import models
@@ -28,7 +31,11 @@ class Post(models.Model):
     news = "NW"
     articles = "AR"
     TYPE_CHOICES = ((news,"Новость") , (articles,"Статья"))
+<<<<<<< HEAD
     author = models.ForeignKey(Author, on_delete=models.CASCADE,)
+=======
+    author = models.ForeignKey(Author, on_delete=CASCADE)
+>>>>>>> 563c196b426d9b954cb44975d8bf8b2b33b43990
     post_type = models.CharField(max_length=100, choices=TYPE_CHOICES, default=news)
     category = models.ManyToManyField(Category, through="PostCategory")
     created_ad = models.DateTimeField(auto_now_add=True)
